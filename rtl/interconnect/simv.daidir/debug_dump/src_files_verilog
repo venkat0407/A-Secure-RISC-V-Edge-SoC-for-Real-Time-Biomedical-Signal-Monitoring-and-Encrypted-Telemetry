@@ -1,0 +1,5 @@
+/home/student/Documents/nani/rtl/interconnect/arbiter.v
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect_wrap_1x9.v
+/home/student/Documents/nani/rtl/interconnect/priority_encoder.v
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v

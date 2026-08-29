@@ -1,0 +1,928 @@
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'Rocky Linux release 8.10 (Green Obsidian)' is not supported 
+  on 'x86_64' officially, assuming linux compatibility by default. Set 
+  VCS_ARCH_OVERRIDE to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+
+Warning-[UNKWN_OPTVSIM] Unknown option passed
+  Ignoring unknown option '-v2k' passed to 'vcs' and continuing compilation.
+
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid this.
+                         Chronologic VCS (TM)
+         Version U-2023.03_Full64 -- Sat Aug 29 17:00:11 2026
+
+                    Copyright (c) 1991 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file '/home/student/Documents/nani/rtl/interconnect/priority_encoder.v'
+Parsing design file '/home/student/Documents/nani/rtl/interconnect/arbiter.v'
+Parsing design file '/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v'
+Parsing design file '/home/student/Documents/nani/rtl/interconnect/axi_interconnect_wrap_1x9.v'
+Parsing design file '/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v'
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1035
+  Null statement is used in following verilog source.
+  Source info:         @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1050
+  Null statement is used in following verilog source.
+  Source info:             @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1057
+  Null statement is used in following verilog source.
+  Source info:         @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1063
+  Null statement is used in following verilog source.
+  Source info:             @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1070
+  Null statement is used in following verilog source.
+  Source info:         @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1077
+  Null statement is used in following verilog source.
+  Source info:             @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1084
+  Null statement is used in following verilog source.
+  Source info:         @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1100
+  Null statement is used in following verilog source.
+  Source info:         @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1112
+  Null statement is used in following verilog source.
+  Source info:             @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1119
+  Null statement is used in following verilog source.
+  Source info:         @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1125
+  Null statement is used in following verilog source.
+  Source info:             @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1133
+  Null statement is used in following verilog source.
+  Source info:         @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1186
+  Null statement is used in following verilog source.
+  Source info:     repeat(5) @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1188
+  Null statement is used in following verilog source.
+  Source info:     repeat(5) @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1201
+  Null statement is used in following verilog source.
+  Source info:     repeat(4) @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1203
+  Null statement is used in following verilog source.
+  Source info:     repeat(4) @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1205
+  Null statement is used in following verilog source.
+  Source info:     repeat(4) @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1207
+  Null statement is used in following verilog source.
+  Source info:     repeat(4) @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1209
+  Null statement is used in following verilog source.
+  Source info:     repeat(4) @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1211
+  Null statement is used in following verilog source.
+  Source info:     repeat(4) @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1213
+  Null statement is used in following verilog source.
+  Source info:     repeat(4) @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1215
+  Null statement is used in following verilog source.
+  Source info:     repeat(4) @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1217
+  Null statement is used in following verilog source.
+  Source info:     repeat(4) @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1225
+  Null statement is used in following verilog source.
+  Source info:     repeat(4) @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1227
+  Null statement is used in following verilog source.
+  Source info:     repeat(4) @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1229
+  Null statement is used in following verilog source.
+  Source info:     repeat(4) @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1231
+  Null statement is used in following verilog source.
+  Source info:     repeat(4) @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1233
+  Null statement is used in following verilog source.
+  Source info:     repeat(4) @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1235
+  Null statement is used in following verilog source.
+  Source info:     repeat(4) @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1237
+  Null statement is used in following verilog source.
+  Source info:     repeat(4) @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1239
+  Null statement is used in following verilog source.
+  Source info:     repeat(4) @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1241
+  Null statement is used in following verilog source.
+  Source info:     repeat(4) @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1256
+  Null statement is used in following verilog source.
+  Source info:     repeat(10) @(posedge clk);
+
+
+Lint-[NS] Null statement
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1262
+  Null statement is used in following verilog source.
+  Source info:     #500000; // 500 us absolute limit
+
+Top Level Modules:
+       tb_axi_interconnect_wrap_1x9
+TimeScale is 1 ns / 1 ps
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/arbiter.v, 58
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 2-bit LHS target:
+  Source info: grant_reg = 0;
+  Expression: grant_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/arbiter.v, 59
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: grant_valid_reg = 0;
+  Expression: grant_valid_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/arbiter.v, 60
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: grant_encoded_reg = 0;
+  Expression: grant_encoded_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/arbiter.v, 81
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 2-bit LHS target:
+  Source info: mask_reg = 0;
+  Expression: mask_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/arbiter.v, 99
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 2-bit LHS target:
+  Source info: grant_next = 0;
+  Expression: grant_next
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/arbiter.v, 100
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: grant_valid_next = 0;
+  Expression: grant_valid_next
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/arbiter.v, 101
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: grant_encoded_next = 0;
+  Expression: grant_encoded_next
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/arbiter.v, 117
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: grant_valid_next = 1;
+  Expression: grant_valid_next
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/arbiter.v, 126
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: grant_valid_next = 1;
+  Expression: grant_valid_next
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/arbiter.v, 136
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: grant_valid_next = 1;
+  Expression: grant_valid_next
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/arbiter.v, 145
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 2-bit LHS target:
+  Source info: grant_reg <= 0;
+  Expression: grant_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/arbiter.v, 146
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: grant_valid_reg <= 0;
+  Expression: grant_valid_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/arbiter.v, 147
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: grant_encoded_reg <= 0;
+  Expression: grant_encoded_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/arbiter.v, 148
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 2-bit LHS target:
+  Source info: mask_reg <= 0;
+  Expression: mask_reg
+
+
+Lint-[VNGS] Variable never gets set
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 146
+  Following variable has never been set any value.
+  Source info: m00_axi_buser
+
+
+Lint-[VNGS] Variable never gets set
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 166
+  Following variable has never been set any value.
+  Source info: m00_axi_ruser
+
+
+Lint-[VNGS] Variable never gets set
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 192
+  Following variable has never been set any value.
+  Source info: m01_axi_buser
+
+
+Lint-[VNGS] Variable never gets set
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 212
+  Following variable has never been set any value.
+  Source info: m01_axi_ruser
+
+
+Lint-[VNGS] Variable never gets set
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 238
+  Following variable has never been set any value.
+  Source info: m02_axi_buser
+
+
+Lint-[VNGS] Variable never gets set
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 258
+  Following variable has never been set any value.
+  Source info: m02_axi_ruser
+
+
+Lint-[VNGS] Variable never gets set
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 284
+  Following variable has never been set any value.
+  Source info: m03_axi_buser
+
+
+Lint-[VNGS] Variable never gets set
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 304
+  Following variable has never been set any value.
+  Source info: m03_axi_ruser
+
+
+Lint-[VNGS] Variable never gets set
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 330
+  Following variable has never been set any value.
+  Source info: m04_axi_buser
+
+
+Lint-[VNGS] Variable never gets set
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 350
+  Following variable has never been set any value.
+  Source info: m04_axi_ruser
+
+
+Lint-[VNGS] Variable never gets set
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 376
+  Following variable has never been set any value.
+  Source info: m05_axi_buser
+
+
+Lint-[VNGS] Variable never gets set
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 396
+  Following variable has never been set any value.
+  Source info: m05_axi_ruser
+
+
+Lint-[VNGS] Variable never gets set
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 422
+  Following variable has never been set any value.
+  Source info: m06_axi_buser
+
+
+Lint-[VNGS] Variable never gets set
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 442
+  Following variable has never been set any value.
+  Source info: m06_axi_ruser
+
+
+Lint-[VNGS] Variable never gets set
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 468
+  Following variable has never been set any value.
+  Source info: m07_axi_buser
+
+
+Lint-[VNGS] Variable never gets set
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 488
+  Following variable has never been set any value.
+  Source info: m07_axi_ruser
+
+
+Lint-[VNGS] Variable never gets set
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 514
+  Following variable has never been set any value.
+  Source info: m08_axi_buser
+
+
+Lint-[VNGS] Variable never gets set
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 534
+  Following variable has never been set any value.
+  Source info: m08_axi_ruser
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 55
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: clk = 0;
+  Expression: clk
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 56
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: rst = 1;
+  Expression: rst
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 64
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 8-bit LHS target:
+  Source info: s00_axi_awid = 0;
+  Expression: s00_axi_awid
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 66
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 8-bit LHS target:
+  Source info: s00_axi_awlen = 0;
+  Expression: s00_axi_awlen
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 69
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: s00_axi_awlock = 0;
+  Expression: s00_axi_awlock
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 70
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 4-bit LHS target:
+  Source info: s00_axi_awcache = 0;
+  Expression: s00_axi_awcache
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 71
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 3-bit LHS target:
+  Source info: s00_axi_awprot = 0;
+  Expression: s00_axi_awprot
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 72
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 4-bit LHS target:
+  Source info: s00_axi_awqos = 0;
+  Expression: s00_axi_awqos
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 73
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: s00_axi_awvalid = 0;
+  Expression: s00_axi_awvalid
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 79
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: s00_axi_wlast = 1;
+  Expression: s00_axi_wlast
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 80
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: s00_axi_wvalid = 0;
+  Expression: s00_axi_wvalid
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 87
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: s00_axi_bready = 0;
+  Expression: s00_axi_bready
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 90
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 8-bit LHS target:
+  Source info: s00_axi_arid = 0;
+  Expression: s00_axi_arid
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 92
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 8-bit LHS target:
+  Source info: s00_axi_arlen = 0;
+  Expression: s00_axi_arlen
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 95
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: s00_axi_arlock = 0;
+  Expression: s00_axi_arlock
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 96
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 4-bit LHS target:
+  Source info: s00_axi_arcache = 0;
+  Expression: s00_axi_arcache
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 97
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 3-bit LHS target:
+  Source info: s00_axi_arprot = 0;
+  Expression: s00_axi_arprot
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 98
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 4-bit LHS target:
+  Source info: s00_axi_arqos = 0;
+  Expression: s00_axi_arqos
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 99
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: s00_axi_arvalid = 0;
+  Expression: s00_axi_arvalid
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 108
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: s00_axi_rready = 0;
+  Expression: s00_axi_rready
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1185
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: rst = 1;
+  Expression: rst
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1187
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: rst = 0;
+  Expression: rst
+
+
+Lint-[UI] Unused input
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1289
+  Following is an unused input.
+  Source info: s_axi_awsize
+
+
+Lint-[UI] Unused input
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1290
+  Following is an unused input.
+  Source info: s_axi_awburst
+
+
+Lint-[UI] Unused input
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1311
+  Following is an unused input.
+  Source info: s_axi_arsize
+
+
+Lint-[UI] Unused input
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1312
+  Following is an unused input.
+  Source info: s_axi_arburst
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1396
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 8-bit LHS target:
+  Source info: wr_beat <= (wr_beat + 1);
+  Expression: wr_beat
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1443
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 8-bit LHS target:
+  Source info: rd_beat <= (rd_beat + 1);
+  Expression: rd_beat
+
+
+Lint-[ULCO] Unequal length in comparison operator
+/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v, 1447
+axi_slave_mem, "((rd_beat + 1) == rd_len)"
+  A left 32-bit expression is compared to a right 8-bit expression.
+  Comparing '(rd_beat + 1)' of type logic [31:0]
+  with 'rd_len' of type reg [7:0].
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 306
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 2-bit wide expression is assigned to a 4-bit LHS target:
+  Source info: m_select_reg = 2'b0;
+  Expression: m_select_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 322
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: s_axi_awready_reg = 0;
+  Expression: s_axi_awready_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 323
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: s_axi_wready_reg = 0;
+  Expression: s_axi_wready_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 324
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: s_axi_bvalid_reg = 0;
+  Expression: s_axi_bvalid_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 325
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: s_axi_arready_reg = 0;
+  Expression: s_axi_arready_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 327
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 9-bit LHS target:
+  Source info: m_axi_awvalid_reg = 0;
+  Expression: m_axi_awvalid_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 328
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 9-bit LHS target:
+  Source info: m_axi_bready_reg = 0;
+  Expression: m_axi_bready_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 329
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 9-bit LHS target:
+  Source info: m_axi_arvalid_reg = 0;
+  Expression: m_axi_arvalid_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 330
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 9-bit LHS target:
+  Source info: m_axi_rready_reg = 0;
+  Expression: m_axi_rready_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 904
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 1-bit wide expression is assigned to a 9-bit LHS target:
+  Source info: m_axi_wvalid_reg = 1'b0;
+  Expression: m_axi_wvalid_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 543
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: s_axi_awready_next = 0;
+  Expression: s_axi_awready_next
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 544
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: s_axi_wready_next = 0;
+  Expression: s_axi_wready_next
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 546
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: s_axi_arready_next = 0;
+  Expression: s_axi_arready_next
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 549
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 9-bit LHS target:
+  Source info: m_axi_bready_next = 0;
+  Expression: m_axi_bready_next
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 551
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 9-bit LHS target:
+  Source info: m_axi_rready_next = 0;
+  Expression: m_axi_rready_next
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 618
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 4-bit LHS target:
+  Source info: m_select_next = i;
+  Expression: m_select_next
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 619
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 4-bit LHS target:
+  Source info: axi_region_next = j;
+  Expression: axi_region_next
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 740
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 8-bit LHS target:
+  Source info: axi_len_next = (axi_len_reg - 1);
+  Expression: axi_len_next
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 766
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: s_axi_awready_reg <= 0;
+  Expression: s_axi_awready_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 767
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: s_axi_wready_reg <= 0;
+  Expression: s_axi_wready_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 768
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: s_axi_bvalid_reg <= 0;
+  Expression: s_axi_bvalid_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 769
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: s_axi_arready_reg <= 0;
+  Expression: s_axi_arready_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 771
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 9-bit LHS target:
+  Source info: m_axi_awvalid_reg <= 0;
+  Expression: m_axi_awvalid_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 772
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 9-bit LHS target:
+  Source info: m_axi_bready_reg <= 0;
+  Expression: m_axi_bready_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 773
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 9-bit LHS target:
+  Source info: m_axi_arvalid_reg <= 0;
+  Expression: m_axi_arvalid_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 774
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 9-bit LHS target:
+  Source info: m_axi_rready_reg <= 0;
+  Expression: m_axi_rready_reg
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 956
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 1-bit wide expression is assigned to a 9-bit LHS target:
+  Source info: m_axi_wvalid_reg <= 1'b0;
+  Expression: m_axi_wvalid_reg
+
+
+Lint-[UI] Unused input
+/home/student/Documents/nani/rtl/interconnect/axi_interconnect.v, 194
+  Following is an unused input.
+  Source info: dummy
+
+
+Lint-[CAWM-L] Width mismatch
+/home/student/Documents/nani/rtl/interconnect/priority_encoder.v, 88
+  Continuous assignment width mismatch
+  2 bits (lhs) versus 32 bits (rhs).
+  Source info: assign output_unencoded = (1 << output_encoded);  
+
+Starting vcs inline pass...
+
+2 modules and 0 UDP read.
+recompiling module tb_axi_interconnect_wrap_1x9
+recompiling module axi_slave_mem
+Both modules done.
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x /home/student/Documents/nani/rtl/interconnect/simv ]; then chmod a-x /home/student/Documents/nani/rtl/interconnect/simv; fi
+g++  -o /home/student/Documents/nani/rtl/interconnect/simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/home/student/snps_tools_target/vcs/U-2023.03/linux64/lib -L/home/student/snps_tools_target/vcs/U-2023.03/linux64/lib  -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _46329_archive_1.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o            -lvirsim -lerrorinf -lsnpsmalloc -lvfs /home/student/snps_tools_target/verdi/U-2023.03-SP1/share/PLI/VCS/linux64/pli.a    -lvcsnew -lsimprofile -luclinative /home/student/snps_tools_target/vcs/U-2023.03/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   /home/student/snps_tools_target/vcs/U-2023.03/linux64/lib/vcs_save_restore_new.o /home/student/snps_tools_target/verdi/U-2023.03-SP1/share/PLI/VCS/LINUX64/pli.a -ldl -lm  -lc -lpthread -ldl 
+/home/student/Documents/nani/rtl/interconnect/simv up to date
+CPU time: .287 seconds to compile + .158 seconds to elab + .155 seconds to link

@@ -1,0 +1,26 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "tb_axi_interconnect_wrap_1x9": [
+        "tb_axi_interconnect_wrap_1x9",
+        "CJL80",
+        "module",
+        2
+    ],
+    "axi_slave_mem": [
+        "axi_slave_mem",
+        "N6cwG",
+        "module",
+        3
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        4
+    ]
+}

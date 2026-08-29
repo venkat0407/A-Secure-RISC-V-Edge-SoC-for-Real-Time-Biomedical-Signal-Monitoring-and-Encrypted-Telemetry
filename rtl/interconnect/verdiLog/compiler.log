@@ -1,0 +1,18 @@
+*design* DebussyLib (btIdent Verdi_U-2023.03-SP1)
+Command arguments:
+    +define+verilog
+    -sv
+    -f file.f
+        +incdir+/home/student/Documents/nani/rtl/interconnect
+        /home/student/Documents/nani/rtl/interconnect/priority_encoder.v
+        /home/student/Documents/nani/rtl/interconnect/arbiter.v
+        /home/student/Documents/nani/rtl/interconnect/axi_interconnect.v
+        /home/student/Documents/nani/rtl/interconnect/axi_interconnect_wrap_1x9.v
+        /home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v
+    -top
+    tb_axi_interconnect_wrap_1x9
+
+Highest level modules:
+tb_axi_interconnect_wrap_1x9
+
+Total	0 error(s),   0 warning(s)

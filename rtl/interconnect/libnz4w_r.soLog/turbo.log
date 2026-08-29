@@ -1,0 +1,3 @@
+Command Line: /home/student/snps_tools_target/vcs/U-2023.03/linux64/lib/libnz4w_r.so -usevlogan_front -q -lib simv.daidir/work -2012 -enable_vfs_mp -enable_vfs_mt -flush_textdoc_sdb -enable_vfs_lock -incsave -binddoc_check
+uname(Linux vlsi65.vce.ac.in 4.18.0-553.56.1.el8_10.x86_64 #1 SMP Tue Jun 10 17:00:45 UTC 2025 x86_64)
+au time 0.419824 0.447253 0.040103 delta 128344064 128344064 total 513011712 513011712

@@ -1,0 +1,58 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid this.
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version U-2023.03_Full64; Runtime version U-2023.03_Full64;  Aug 29 17:00 2026
+*Verdi* Loading libsscore_vcs202303.so
+*Verdi* : FSDB_GATE & FSDB_RTL is disabled because delta cycle dumping is set.
+FSDB Dumper for VCS, Release Verdi_U-2023.03-SP1, Linux x86_64/64bit, 05/28/2023
+(C) 1996 - 2023 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'tb_axi_interconnect_wrap_1x9.fsdb'
+*Verdi* : Enable dumping region information.
+*Verdi* : Enable dumping glitch values.
+*Verdi* : Enable dumping value change sequence.
+*Verdi* : Begin traversing the scope (tb_axi_interconnect_wrap_1x9), layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs under scope (tb_axi_interconnect_wrap_1x9), layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+*Verdi* : Begin traversing the SVA assertions under scope (tb_axi_interconnect_wrap_1x9), layer (0).
+*Verdi* : End of traversing the SVA assertions.
+Addressing configuration for axi_interconnect instance tb_axi_interconnect_wrap_1x9.dut.axi_interconnect_inst
+ 0 ( 0): 00000000 / 24 -- 00000000-00ffffff
+ 1 ( 0): 01000000 / 24 -- 01000000-01ffffff
+ 2 ( 0): 02000000 / 24 -- 02000000-02ffffff
+ 3 ( 0): 03000000 / 24 -- 03000000-03ffffff
+ 4 ( 0): 04000000 / 24 -- 04000000-04ffffff
+ 5 ( 0): 05000000 / 24 -- 05000000-05ffffff
+ 6 ( 0): 06000000 / 24 -- 06000000-06ffffff
+ 7 ( 0): 07000000 / 24 -- 07000000-07ffffff
+ 8 ( 0): 08000000 / 24 -- 08000000-08ffffff
+============================================================
+ AXI Interconnect 1x9 Testbench
+ Testing WRITE then READ to all 9 master ports
+============================================================
+
+--- WRITE PHASE ---
+
+--- READ & VERIFY PHASE ---
+PASS: addr=0x00000010  exp=0xdead0000  got=0xdead0000
+PASS: addr=0x01000010  exp=0xbeef0001  got=0xbeef0001
+PASS: addr=0x02000010  exp=0xcafe0002  got=0xcafe0002
+PASS: addr=0x03000010  exp=0xf00d0003  got=0xf00d0003
+PASS: addr=0x04000010  exp=0xa5a50004  got=0xa5a50004
+PASS: addr=0x05000010  exp=0x5a5a0005  got=0x5a5a0005
+PASS: addr=0x06000010  exp=0x12340006  got=0x12340006
+PASS: addr=0x07000010  exp=0xabcd0007  got=0xabcd0007
+PASS: addr=0x08000010  exp=0x98760008  got=0x98760008
+
+============================================================
+ Test Summary: PASS=9  FAIL=0  (Total=9)
+============================================================
+ ALL TESTS PASSED
+$finish called from file "/home/student/Documents/nani/rtl/interconnect/tb_axi_interconnect_wrap_1x9.v", line 1257.
+$finish at simulation time              2625000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2625000 ps
+CPU Time:      0.130 seconds;       Data structure size:   0.1Mb
+Sat Aug 29 17:00:17 2026

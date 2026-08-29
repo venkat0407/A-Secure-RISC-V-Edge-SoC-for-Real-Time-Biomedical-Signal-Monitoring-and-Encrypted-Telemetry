@@ -1,0 +1,92 @@
+version: (200506)
+
+available memory: 64M bytes
+used memory: 262144 bytes [need 256K bytes if disable swap]
+
+used block: 327 [memory(4) file(323)]
+                 [ 64K(327) { total 21M bytes } ]
+overhead: (159746) bytes for (327) blocks [Average: (488) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 0(times) 0K(bytes) [0K bytes compressed data from file]
+access => 0(times) 0K(bytes)
+          [hit ratio: 0%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/student/Documents/nani/rtl/interconnect/libnz4w_r.soLog)
+used swap file number: (0)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (2)
+closeHead: (0)
+closeTail: (0)
+openCnt: (0)
+fid(1): fd(0) fileName(/home/student/Documents/nani/rtl/interconnect/libnz4w_r.soLog/_swap_0001#8323328#42219)
+	size(0) lastModTime(0) curModTime(1788000736)
+	mode(w+b)	hot(0) cool(0) pos(0)
+fid(0): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+==================================================
+mySelf(0x155544358820) pre(0x155544046220) next(0x155544355470)
+version(200506)
+date(Feb  1 2023 02:39:48)
+==================================================
+mySelf(0x155544355470) pre(0x155544358820) next(0x155544189d10)
+version(200506)
+date(Feb  1 2023 02:39:48)
+==================================================
+mySelf(0x155544189d10) pre(0x155544355470) next(0x1555440bbb40)
+version(200506)
+date(Feb  1 2023 02:39:48)
+==================================================
+mySelf(0x1555440bbb40) pre(0x155544189d10) next(0x155544bbc810)
+version(200506)
+date(Feb  1 2023 02:39:48)
+==================================================
+mySelf(0x155544bbc810) pre(0x1555440bbb40) next(0x15554466dea0)
+version(200506)
+date(Feb  1 2023 02:39:48)
+==================================================
+mySelf(0x15554466dea0) pre(0x155544bbc810) next(0x155544186870)
+version(200506)
+date(Feb  1 2023 02:39:48)
+==================================================
+mySelf(0x155544186870) pre(0x15554466dea0) next(0x15554451b990)
+version(200506)
+date(Feb  1 2023 02:39:48)
+==================================================
+mySelf(0x15554451b990) pre(0x155544186870) next(0x15554455bb50)
+version(200506)
+date(Feb  1 2023 02:39:48)
+==================================================
+mySelf(0x15554455bb50) pre(0x15554451b990) next(0x155544ca99b0)
+version(200506)
+date(Feb  1 2023 02:39:48)
+==================================================
+mySelf(0x155544ca99b0) pre(0x15554455bb50) next(0x155544146410)
+version(200506)
+date(Feb  1 2023 02:39:48)
+==================================================
+mySelf(0x155544146410) pre(0x155544ca99b0) next(0x1555440ce2d0)
+version(200506)
+date(Feb  1 2023 02:39:48)
+==================================================
+mySelf(0x1555440ce2d0) pre(0x155544146410) next(0x155544109d00)
+version(200506)
+date(Feb  1 2023 02:39:48)
+==================================================
+mySelf(0x155544109d00) pre(0x1555440ce2d0) next(0x155544c06e20)
+version(200506)
+date(Feb  1 2023 02:39:48)
+==================================================
+mySelf(0x155544c06e20) pre(0x155544109d00) next(0x155544053610)
+version(200506)
+date(Feb  1 2023 02:39:48)
+==================================================
+mySelf(0x155544053610) pre(0x155544c06e20) next((nil))
+version(200506)
+date(Feb  1 2023 02:39:48)

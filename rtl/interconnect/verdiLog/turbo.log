@@ -1,0 +1,3 @@
+Command Line: /home/student/snps_tools_target/verdi/U-2023.03-SP1/platform/LINUXAMD64/bin/Novas -sv -f file.f -top tb_axi_interconnect_wrap_1x9 -ssf tb_axi_interconnect_wrap_1x9.fsdb -nologo
+uname(Linux vlsi65.vce.ac.in 4.18.0-553.56.1.el8_10.x86_64 #1 SMP Tue Jun 10 17:00:45 UTC 2025 x86_64)
+au time 1620.466823 15.180883 16.406451 delta 378806272 378806272 total 949899264 949899264
