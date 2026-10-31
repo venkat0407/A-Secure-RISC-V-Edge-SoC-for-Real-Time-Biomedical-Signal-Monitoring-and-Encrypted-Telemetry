@@ -1,0 +1,24 @@
+# EDA Simulation Outputs
+*.log
+*.key
+*.vcd
+*.fsdb
+*.vpd
+*.daidir/
+csrc/
+simv
+simv.*
+verdiLog/
+novas.*
+
+# Firmware build objects
+build/
+output/
+firmware/*.o
+firmware/*.bin
+firmware/*.dump
+
+# Editor & temporary files
+*~
+*.swp
+*.swo
