@@ -1,0 +1,48 @@
+Magic 271485
+Revision Verdi_U-2023.03-SP1
+
+; Window Layout
+viewPort 0 25 1600 750 250 100
+
+; Signal spacing
+signalSpacing 5
+
+addGroup "1. Clock & Reset"
+addSignal -h 15 /tb_top/clk
+addSignal -h 15 /tb_top/rst_n
+
+addGroup "2. UVM VIP Virtual Interface (vif)"
+addSignal -h 15 -color ID_YELLOW5 /tb_top/vif/uart_rx
+addSignal -h 15 -color ID_GREEN5 /tb_top/vif/uart_tx
+
+addGroup "3. DUT Boundary Pins"
+addSignal -h 15 /tb_top/dut/uart_rx
+addSignal -h 15 /tb_top/dut/uart_tx
+
+addGroup "4. CPU Master AXI Bus (s00_axi_*)"
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/s00_axi_awaddr[31:0]
+addSignal -h 15 /tb_top/dut/s00_axi_awvalid
+addSignal -h 15 /tb_top/dut/s00_axi_awready
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/s00_axi_wdata[31:0]
+addSignal -h 15 /tb_top/dut/s00_axi_wvalid
+addSignal -h 15 /tb_top/dut/s00_axi_wready
+addSignal -h 15 /tb_top/dut/s00_axi_bvalid
+
+addGroup "5. UART IP Block (u_uart)"
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/u_uart/axi_awaddr_i[4:0]
+addSignal -h 15 /tb_top/dut/u_uart/axi_awvalid_i
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/u_uart/axi_wdata_i[31:0]
+addSignal -h 15 /tb_top/dut/u_uart/axi_wvalid_i
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/u_uart/data_tx_fifo_controller[7:0]
+addSignal -h 15 /tb_top/dut/u_uart/load_tx_fifo_controller
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/u_uart/data_rx_controller_fifo[7:0]
+addSignal -h 15 /tb_top/dut/u_uart/push_controller_rx_fifo
+addSignal -h 15 /tb_top/dut/u_uart/read_interrupt_o
+
+addGroup "6. UART Internal Controller & FSM"
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/u_uart/uart_controller_inst/tx_data_i[7:0]
+addSignal -h 15 /tb_top/dut/u_uart/uart_controller_inst/tx_load_i
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/u_uart/uart_controller_inst/rx_data_o[7:0]
+addSignal -h 15 /tb_top/dut/u_uart/uart_controller_inst/rx_push_o
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/u_uart/uart_controller_inst/uart_receiver_inst/rx_data_o[7:0]
+addSignal -h 15 /tb_top/dut/u_uart/uart_controller_inst/uart_receiver_inst/rx_valid_o

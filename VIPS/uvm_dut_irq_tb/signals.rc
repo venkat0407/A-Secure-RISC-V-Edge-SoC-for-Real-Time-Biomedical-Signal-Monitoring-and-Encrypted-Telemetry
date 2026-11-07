@@ -1,0 +1,46 @@
+Magic 271485
+Revision Verdi_U-2023.03-SP1
+
+; Window Layout
+viewPort 0 25 1600 750 250 100
+
+; Signal spacing
+signalSpacing 5
+
+addGroup "1. Clock & Reset"
+addSignal -h 15 /tb_top/clk
+addSignal -h 15 /tb_top/rst_n
+
+addGroup "2. UVM VIP Virtual Interface (vif)"
+addSignal -h 15 -color ID_RED5 /tb_top/vif/core_irq_out
+
+addGroup "3. DUT Boundary Pins"
+addSignal -h 15 -color ID_ORANGE5 /tb_top/dut/core_irq_out
+
+addGroup "4. CPU Master AXI Bus (s00_axi_*)"
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/s00_axi_awaddr[31:0]
+addSignal -h 15 /tb_top/dut/s00_axi_awvalid
+addSignal -h 15 /tb_top/dut/s00_axi_awready
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/s00_axi_wdata[31:0]
+addSignal -h 15 /tb_top/dut/s00_axi_wvalid
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/s00_axi_araddr[31:0]
+addSignal -h 15 /tb_top/dut/s00_axi_arvalid
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/s00_axi_rdata[31:0]
+addSignal -h 15 /tb_top/dut/s00_axi_rvalid
+
+addGroup "5. Interrupt Aggregator (u_intc)"
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/u_intc/s_axi_awaddr[31:0]
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/u_intc/s_axi_wdata[31:0]
+addSignal -h 15 -color ID_PURPLE5 -UNSIGNED -BIN /tb_top/dut/u_intc/irq_sources[6:0]
+addSignal -h 15 -color ID_BLUE5 -UNSIGNED -BIN /tb_top/dut/u_intc/irq_mask[6:0]
+addSignal -h 15 -color ID_YELLOW5 -UNSIGNED -BIN /tb_top/dut/u_intc/irq_cause[6:0]
+addSignal -h 15 -color ID_RED5 /tb_top/dut/u_intc/core_irq
+
+addGroup "6. Peripheral IRQ Sources"
+addSignal -h 15 /tb_top/dut/uart_irq
+addSignal -h 15 -color ID_GREEN5 /tb_top/dut/timer_irq
+addSignal -h 15 /tb_top/dut/gpio_irq
+addSignal -h 15 /tb_top/dut/adc_irq
+addSignal -h 15 /tb_top/dut/qrs_peak_irq
+addSignal -h 15 /tb_top/dut/aes_done_irq
+addSignal -h 15 /tb_top/dut/wdt_irq

@@ -1,0 +1,44 @@
+// ==============================================================================
+// Class: wdt_dut_monitor
+// Description: UVM Monitor capturing active-low wdt_reset_n assertions from DUT
+// ==============================================================================
+
+class wdt_dut_monitor extends uvm_monitor;
+
+    virtual wdt_dut_if vif;
+    uvm_analysis_port #(wdt_dut_item) ap;
+
+    `uvm_component_utils(wdt_dut_monitor)
+
+    function new(string name, uvm_component parent);
+        super.new(name, parent);
+        ap = new("ap", this);
+    endfunction
+
+    function void build_phase(uvm_phase phase);
+        super.build_phase(phase);
+        if (!uvm_config_db#(virtual wdt_dut_if)::get(this, "", "vif", vif)) begin
+            `uvm_fatal("NOVIF", $sformatf("Virtual interface 'wdt_dut_if' not found in config_db for %s", get_full_name()))
+        end
+        `uvm_info(get_type_name(), "Successfully retrieved virtual interface 'wdt_dut_if' in monitor from uvm_config_db using GET!", UVM_MEDIUM)
+    endfunction
+
+    task run_phase(uvm_phase phase);
+        wdt_dut_item item;
+        logic prev_val = 1'b1;
+
+        @(posedge vif.rst_n);
+        forever begin
+            @(posedge vif.clk);
+            if (vif.wdt_reset_n !== prev_val) begin
+                prev_val = vif.wdt_reset_n;
+                item = wdt_dut_item::type_id::create("item");
+                item.wdt_reset_active = (vif.wdt_reset_n == 1'b0);
+                item.transition_time  = $time;
+                `uvm_info(get_type_name(), $sformatf("[DUT INTERFACE -> VIP MONITOR] WDT Reset pin (wdt_reset_n) changed to %0b (Active: %0b) at %0t ps", vif.wdt_reset_n, item.wdt_reset_active, $time), UVM_LOW)
+                ap.write(item);
+            end
+        end
+    endtask
+
+endclass

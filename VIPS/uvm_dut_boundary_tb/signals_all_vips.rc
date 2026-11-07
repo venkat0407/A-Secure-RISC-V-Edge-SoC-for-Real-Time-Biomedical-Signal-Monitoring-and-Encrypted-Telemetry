@@ -1,0 +1,112 @@
+Magic 271485
+Revision Verdi_U-2023.03-SP1
+
+; Window Layout
+viewPort 0 25 1600 750 250 100
+
+; Signal spacing
+signalSpacing 5
+
+addGroup "1. System Clock & Reset"
+addSignal -h 15 /tb_top/clk
+addSignal -h 15 /tb_top/rst_n
+
+addGroup "2. ALL UVM VIP Interfaces (vif)"
+addSignal -h 15 -color ID_YELLOW5 /tb_top/vif/uart_rx
+addSignal -h 15 -color ID_GREEN5 /tb_top/vif/uart_tx
+addSignal -h 15 -color ID_CYAN5 -UNSIGNED -HEX /tb_top/vif/gpio_io[7:0]
+addSignal -h 15 -color ID_CYAN5 -UNSIGNED -HEX /tb_top/vif/gpio_drv_data[7:0]
+addSignal -h 15 -color ID_CYAN5 -UNSIGNED -BIN /tb_top/vif/gpio_drv_en[7:0]
+addSignal -h 15 -color ID_PURPLE5 -UNSIGNED -HEX /tb_top/vif/adc_sample_data[11:0]
+addSignal -h 15 -color ID_PURPLE5 /tb_top/vif/adc_sample_valid
+addSignal -h 15 -color ID_RED5 /tb_top/vif/alert_led
+addSignal -h 15 -color ID_ORANGE5 /tb_top/vif/wdt_reset_n
+addSignal -h 15 -color ID_BLUE5 /tb_top/vif/core_irq_out
+
+addGroup "3. ALL DUT Boundary Pins"
+addSignal -h 15 -color ID_YELLOW5 /tb_top/dut/uart_rx
+addSignal -h 15 -color ID_GREEN5 /tb_top/dut/uart_tx
+addSignal -h 15 -color ID_CYAN5 -UNSIGNED -HEX /tb_top/dut/gpio_io[7:0]
+addSignal -h 15 -color ID_PURPLE5 -UNSIGNED -HEX /tb_top/dut/adc_sample_data[11:0]
+addSignal -h 15 -color ID_PURPLE5 /tb_top/dut/adc_sample_valid
+addSignal -h 15 -color ID_RED5 /tb_top/dut/alert_led
+addSignal -h 15 -color ID_ORANGE5 /tb_top/dut/wdt_reset_n
+addSignal -h 15 -color ID_BLUE5 /tb_top/dut/core_irq_out
+
+addGroup "4. CPU Master AXI Bus (s00_axi_*)"
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/s00_axi_awaddr[31:0]
+addSignal -h 15 /tb_top/dut/s00_axi_awvalid
+addSignal -h 15 /tb_top/dut/s00_axi_awready
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/s00_axi_wdata[31:0]
+addSignal -h 15 /tb_top/dut/s00_axi_wvalid
+addSignal -h 15 /tb_top/dut/s00_axi_wready
+addSignal -h 15 /tb_top/dut/s00_axi_bvalid
+addSignal -h 15 /tb_top/dut/s00_axi_bready
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/s00_axi_araddr[31:0]
+addSignal -h 15 /tb_top/dut/s00_axi_arvalid
+addSignal -h 15 /tb_top/dut/s00_axi_arready
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/s00_axi_rdata[31:0]
+addSignal -h 15 /tb_top/dut/s00_axi_rvalid
+addSignal -h 15 /tb_top/dut/s00_axi_rready
+
+addGroup "5. UART IP Subsystem (u_uart)"
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/u_uart/axi_awaddr_i[4:0]
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/u_uart/axi_wdata_i[31:0]
+addSignal -h 15 /tb_top/dut/u_uart/axi_wvalid_i
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/u_uart/data_tx_fifo_controller[7:0]
+addSignal -h 15 /tb_top/dut/u_uart/load_tx_fifo_controller
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/u_uart/uart_controller_inst/tx_data_i[7:0]
+addSignal -h 15 /tb_top/dut/u_uart/uart_controller_inst/tx_load_i
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/u_uart/uart_controller_inst/rx_data_o[7:0]
+addSignal -h 15 /tb_top/dut/u_uart/uart_controller_inst/rx_push_o
+
+addGroup "6. GPIO IP Subsystem (u_gpio)"
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/u_gpio/s_axi_awaddr[31:0]
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/u_gpio/s_axi_wdata[31:0]
+addSignal -h 15 -color ID_CYAN5 -UNSIGNED -HEX /tb_top/dut/u_gpio/gpio_regs_inst/s_reg_dir[7:0]
+addSignal -h 15 -color ID_BLUE5 -UNSIGNED -HEX /tb_top/dut/u_gpio/gpio_regs_inst/s_reg_data_o[7:0]
+addSignal -h 15 -color ID_YELLOW5 -UNSIGNED -HEX /tb_top/dut/u_gpio/gpio_regs_inst/gpio_i[7:0]
+
+addGroup "7. 12-Bit SAR ADC Subsystem (u_adc)"
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/u_adc/s_axi_awaddr[31:0]
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/u_adc/s_axi_wdata[31:0]
+addSignal -h 15 -color ID_PURPLE5 -UNSIGNED -HEX /tb_top/dut/u_adc/adc_registers_inst/reg_ctrl[31:0]
+addSignal -h 15 -color ID_BLUE5 -UNSIGNED -HEX /tb_top/dut/u_adc/adc_registers_inst/reg_status[31:0]
+addSignal -h 15 -color ID_GREEN5 -UNSIGNED -HEX /tb_top/dut/u_adc/fifo_rdata[11:0]
+addSignal -h 15 /tb_top/dut/u_adc/fifo_empty
+addSignal -h 15 /tb_top/dut/u_adc/fifo_push
+
+addGroup "8. Biomedical Streaming (FIR + QRS)"
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/u_fir/data_in[11:0]
+addSignal -h 15 /tb_top/dut/u_fir/valid_in
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/u_fir/data_out[15:0]
+addSignal -h 15 /tb_top/dut/u_fir/valid_out
+addSignal -h 15 -color ID_YELLOW5 -UNSIGNED -HEX /tb_top/dut/u_qrs/ecg_in[11:0]
+addSignal -h 15 /tb_top/dut/u_qrs/sample_valid
+addSignal -h 15 -color ID_GREEN5 /tb_top/dut/u_qrs/peak_detected
+addSignal -h 15 -color ID_RED5 /tb_top/dut/u_qrs/alert_flag
+addSignal -h 15 -color ID_RED5 /tb_top/dut/u_qrs/alert_led_o
+
+addGroup "9. Watchdog Timer Subsystem (u_wdt)"
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/u_wdt/s_axi_awaddr[31:0]
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/u_wdt/s_axi_wdata[31:0]
+addSignal -h 15 -color ID_PURPLE5 -UNSIGNED -HEX /tb_top/dut/u_wdt/wdt_ctrl[31:0]
+addSignal -h 15 -color ID_BLUE5 -UNSIGNED -HEX /tb_top/dut/u_wdt/wdt_reload[31:0]
+addSignal -h 15 -color ID_YELLOW5 -UNSIGNED -HEX /tb_top/dut/u_wdt/wdt_counter[31:0]
+addSignal -h 15 -color ID_GREEN5 /tb_top/dut/u_wdt/feed_strobe
+addSignal -h 15 -color ID_RED5 /tb_top/dut/u_wdt/wdt_reset_o
+
+addGroup "10. Interrupt Aggregator Subsystem (u_intc)"
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/u_intc/s_axi_awaddr[31:0]
+addSignal -h 15 -UNSIGNED -HEX /tb_top/dut/u_intc/s_axi_wdata[31:0]
+addSignal -h 15 -color ID_PURPLE5 -UNSIGNED -BIN /tb_top/dut/u_intc/irq_sources[6:0]
+addSignal -h 15 -color ID_BLUE5 -UNSIGNED -BIN /tb_top/dut/u_intc/irq_mask[6:0]
+addSignal -h 15 -color ID_YELLOW5 -UNSIGNED -BIN /tb_top/dut/u_intc/irq_cause[6:0]
+addSignal -h 15 -color ID_RED5 /tb_top/dut/u_intc/core_irq
+addSignal -h 15 /tb_top/dut/uart_irq
+addSignal -h 15 /tb_top/dut/timer_irq
+addSignal -h 15 /tb_top/dut/gpio_irq
+addSignal -h 15 /tb_top/dut/adc_irq
+addSignal -h 15 /tb_top/dut/qrs_peak_irq
+addSignal -h 15 /tb_top/dut/aes_done_irq
+addSignal -h 15 /tb_top/dut/wdt_irq

@@ -1,0 +1,8 @@
+uart_rx,input,1
+uart_tx,output,1
+gpio_io,inout,8
+adc_sample_data,input,12
+adc_sample_valid,input,1
+alert_led,output,1
+wdt_reset_n,output,1
+core_irq_out,output,1

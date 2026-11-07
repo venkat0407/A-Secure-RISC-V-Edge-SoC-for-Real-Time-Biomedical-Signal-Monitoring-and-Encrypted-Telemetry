@@ -1,0 +1,9 @@
+signal_name,direction,width,peripheral,boundary_flow,domain,testmap_tc,description
+uart_rx,input,1,UART (M00),Coming In (External -> DUT),Telemetry / Control,TC-05; TC-17,External serial receive data input (8N1) for telemetry and host commands
+uart_tx,output,1,UART (M00),Going Out (DUT -> External),Telemetry / Data,TC-05; TC-17,External serial transmit data output (8N1) streaming diagnostic and encrypted packets
+gpio_io,inout,8,GPIO (M02),Bidirectional (In/Out Boundary),General Purpose IO,TC-06,8-bit bidirectional tri-state I/O bus controlled by DIR and DATA_O registers
+adc_sample_data,input,12,ADC Controller (M03),Coming In (External -> DUT),Biomedical Sensor,TC-09; TC-17,12-bit raw digitized ECG voltage sample from external SAR ADC (centered at 0x800)
+adc_sample_valid,input,1,ADC Controller (M03),Coming In (External -> DUT),Biomedical Sensor,TC-09; TC-17,Sample valid strobe pulsing high for 1 clock cycle on each fresh ADC conversion
+alert_led,output,1,QRS Accelerator (M05),Going Out (DUT -> External),Hardware Safety Alert,TC-10; TC-11; TC-17,Autonomous hardware cardiac alert output; asserts immediately on arrhythmia or R-peak (bypasses CPU)
+wdt_reset_n,output,1,Watchdog Timer (M07),Going Out (DUT -> External),System Safety Reset,TC-16,Active-low hardware system reset signal asserted if CPU fails to service watchdog timer
+core_irq_out,output,1,Interrupt Aggregator (M08),Going Out (DUT -> External),Diagnostics / Host IRQ,TC-14,Aggregated core interrupt output reflecting combined unmasked peripheral interrupt line

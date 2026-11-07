@@ -1,0 +1,1029 @@
+Time:0
+/tb_top/clk	0
+/tb_top/rst_n	0
+/tb_top/vif/uart_rx	1
+/tb_top/vif/uart_tx	1
+/tb_top/vif/gpio_io	zzzzzzzz
+/tb_top/vif/adc_sample_valid	0
+/tb_top/vif/wdt_reset_n	1
+/tb_top/vif/core_irq_out	0
+Time:10000
+/tb_top/clk	1
+Time:20000
+/tb_top/clk	0
+Time:30000
+/tb_top/clk	1
+Time:40000
+/tb_top/clk	0
+Time:50000
+/tb_top/clk	1
+Time:60000
+/tb_top/clk	0
+Time:70000
+/tb_top/clk	1
+Time:80000
+/tb_top/clk	0
+Time:90000
+/tb_top/clk	1
+Time:100000
+/tb_top/rst_n	1
+/tb_top/clk	0
+Time:110000
+/tb_top/clk	1
+Time:120000
+/tb_top/clk	0
+Time:130000
+/tb_top/clk	1
+Time:140000
+/tb_top/clk	0
+Time:150000
+/tb_top/clk	1
+Time:160000
+/tb_top/clk	0
+Time:170000
+/tb_top/clk	1
+Time:180000
+/tb_top/clk	0
+Time:190000
+/tb_top/clk	1
+Time:200000
+/tb_top/clk	0
+Time:210000
+/tb_top/clk	1
+Time:220000
+/tb_top/clk	0
+Time:230000
+/tb_top/clk	1
+Time:240000
+/tb_top/clk	0
+Time:250000
+/tb_top/clk	1
+Time:260000
+/tb_top/clk	0
+Time:270000
+/tb_top/clk	1
+Time:280000
+/tb_top/clk	0
+Time:290000
+/tb_top/clk	1
+Time:300000
+/tb_top/clk	0
+Time:310000
+/tb_top/clk	1
+Time:320000
+/tb_top/clk	0
+Time:330000
+/tb_top/clk	1
+Time:340000
+/tb_top/clk	0
+Time:350000
+/tb_top/clk	1
+Time:360000
+/tb_top/clk	0
+Time:370000
+/tb_top/clk	1
+Time:380000
+/tb_top/clk	0
+Time:390000
+/tb_top/vif/gpio_io	1100zzzz
+/tb_top/vif/adc_sample_valid	1
+/tb_top/clk	1
+Time:400000
+/tb_top/clk	0
+Time:410000
+/tb_top/vif/uart_rx	0
+/tb_top/vif/adc_sample_valid	0
+/tb_top/clk	1
+Time:420000
+/tb_top/clk	0
+Time:430000
+/tb_top/clk	1
+Time:440000
+/tb_top/clk	0
+Time:450000
+/tb_top/clk	1
+Time:460000
+/tb_top/clk	0
+Time:470000
+/tb_top/clk	1
+Time:480000
+/tb_top/clk	0
+Time:490000
+/tb_top/clk	1
+Time:500000
+/tb_top/clk	0
+Time:510000
+/tb_top/clk	1
+Time:520000
+/tb_top/clk	0
+Time:530000
+/tb_top/clk	1
+Time:540000
+/tb_top/clk	0
+Time:550000
+/tb_top/clk	1
+Time:560000
+/tb_top/clk	0
+Time:570000
+/tb_top/clk	1
+Time:580000
+/tb_top/clk	0
+Time:590000
+/tb_top/clk	1
+Time:600000
+/tb_top/clk	0
+Time:610000
+/tb_top/clk	1
+Time:620000
+/tb_top/clk	0
+Time:630000
+/tb_top/clk	1
+Time:640000
+/tb_top/clk	0
+Time:650000
+/tb_top/clk	1
+Time:660000
+/tb_top/clk	0
+Time:670000
+/tb_top/clk	1
+Time:680000
+/tb_top/clk	0
+Time:690000
+/tb_top/clk	1
+Time:700000
+/tb_top/clk	0
+Time:710000
+/tb_top/clk	1
+Time:720000
+/tb_top/clk	0
+Time:730000
+/tb_top/clk	1
+Time:740000
+/tb_top/clk	0
+Time:750000
+/tb_top/vif/gpio_io	11000000
+/tb_top/clk	1
+Time:760000
+/tb_top/clk	0
+Time:770000
+/tb_top/clk	1
+Time:780000
+/tb_top/clk	0
+Time:790000
+/tb_top/clk	1
+Time:800000
+/tb_top/clk	0
+Time:810000
+/tb_top/clk	1
+Time:820000
+/tb_top/clk	0
+Time:830000
+/tb_top/clk	1
+Time:840000
+/tb_top/clk	0
+Time:850000
+/tb_top/clk	1
+Time:860000
+/tb_top/clk	0
+Time:870000
+/tb_top/clk	1
+Time:880000
+/tb_top/clk	0
+Time:890000
+/tb_top/clk	1
+Time:900000
+/tb_top/clk	0
+Time:910000
+/tb_top/clk	1
+Time:920000
+/tb_top/clk	0
+Time:930000
+/tb_top/clk	1
+Time:940000
+/tb_top/clk	0
+Time:950000
+/tb_top/clk	1
+Time:960000
+/tb_top/clk	0
+Time:970000
+/tb_top/clk	1
+Time:980000
+/tb_top/clk	0
+Time:990000
+/tb_top/clk	1
+Time:1000000
+/tb_top/clk	0
+Time:1010000
+/tb_top/clk	1
+Time:1020000
+/tb_top/clk	0
+Time:1030000
+/tb_top/clk	1
+Time:1040000
+/tb_top/clk	0
+Time:1050000
+/tb_top/vif/uart_rx	1
+/tb_top/clk	1
+Time:1060000
+/tb_top/clk	0
+Time:1070000
+/tb_top/clk	1
+Time:1080000
+/tb_top/clk	0
+Time:1090000
+/tb_top/clk	1
+Time:1100000
+/tb_top/clk	0
+Time:1110000
+/tb_top/clk	1
+Time:1120000
+/tb_top/clk	0
+Time:1130000
+/tb_top/clk	1
+Time:1140000
+/tb_top/clk	0
+Time:1150000
+/tb_top/clk	1
+Time:1160000
+/tb_top/clk	0
+Time:1170000
+/tb_top/clk	1
+Time:1180000
+/tb_top/clk	0
+Time:1190000
+/tb_top/clk	1
+Time:1200000
+/tb_top/clk	0
+Time:1210000
+/tb_top/clk	1
+Time:1220000
+/tb_top/clk	0
+Time:1230000
+/tb_top/clk	1
+Time:1240000
+/tb_top/clk	0
+Time:1250000
+/tb_top/clk	1
+Time:1260000
+/tb_top/clk	0
+Time:1270000
+/tb_top/clk	1
+Time:1280000
+/tb_top/clk	0
+Time:1290000
+/tb_top/clk	1
+Time:1300000
+/tb_top/clk	0
+Time:1310000
+/tb_top/clk	1
+Time:1320000
+/tb_top/clk	0
+Time:1330000
+/tb_top/clk	1
+Time:1340000
+/tb_top/clk	0
+Time:1350000
+/tb_top/clk	1
+Time:1360000
+/tb_top/clk	0
+Time:1370000
+/tb_top/vif/uart_rx	0
+/tb_top/clk	1
+Time:1380000
+/tb_top/clk	0
+Time:1390000
+/tb_top/clk	1
+Time:1400000
+/tb_top/clk	0
+Time:1410000
+/tb_top/clk	1
+Time:1420000
+/tb_top/clk	0
+Time:1430000
+/tb_top/clk	1
+Time:1440000
+/tb_top/clk	0
+Time:1450000
+/tb_top/clk	1
+Time:1460000
+/tb_top/clk	0
+Time:1470000
+/tb_top/clk	1
+Time:1480000
+/tb_top/clk	0
+Time:1490000
+/tb_top/clk	1
+Time:1500000
+/tb_top/clk	0
+Time:1510000
+/tb_top/clk	1
+Time:1520000
+/tb_top/clk	0
+Time:1530000
+/tb_top/clk	1
+Time:1540000
+/tb_top/clk	0
+Time:1550000
+/tb_top/clk	1
+Time:1560000
+/tb_top/clk	0
+Time:1570000
+/tb_top/clk	1
+Time:1580000
+/tb_top/clk	0
+Time:1590000
+/tb_top/clk	1
+Time:1600000
+/tb_top/clk	0
+Time:1610000
+/tb_top/clk	1
+Time:1620000
+/tb_top/clk	0
+Time:1630000
+/tb_top/clk	1
+Time:1640000
+/tb_top/clk	0
+Time:1650000
+/tb_top/clk	1
+Time:1660000
+/tb_top/clk	0
+Time:1670000
+/tb_top/clk	1
+Time:1680000
+/tb_top/clk	0
+Time:1690000
+/tb_top/vif/uart_rx	1
+/tb_top/clk	1
+Time:1700000
+/tb_top/clk	0
+Time:1710000
+/tb_top/clk	1
+Time:1720000
+/tb_top/clk	0
+Time:1730000
+/tb_top/clk	1
+Time:1740000
+/tb_top/clk	0
+Time:1750000
+/tb_top/clk	1
+Time:1760000
+/tb_top/clk	0
+Time:1770000
+/tb_top/clk	1
+Time:1780000
+/tb_top/clk	0
+Time:1790000
+/tb_top/clk	1
+Time:1800000
+/tb_top/clk	0
+Time:1810000
+/tb_top/vif/uart_tx	0
+/tb_top/clk	1
+Time:1820000
+/tb_top/clk	0
+Time:1830000
+/tb_top/clk	1
+Time:1840000
+/tb_top/clk	0
+Time:1850000
+/tb_top/clk	1
+Time:1860000
+/tb_top/clk	0
+Time:1870000
+/tb_top/clk	1
+Time:1880000
+/tb_top/clk	0
+Time:1890000
+/tb_top/clk	1
+Time:1900000
+/tb_top/clk	0
+Time:1910000
+/tb_top/clk	1
+Time:1920000
+/tb_top/clk	0
+Time:1930000
+/tb_top/clk	1
+Time:1940000
+/tb_top/clk	0
+Time:1950000
+/tb_top/clk	1
+Time:1960000
+/tb_top/clk	0
+Time:1970000
+/tb_top/clk	1
+Time:1980000
+/tb_top/clk	0
+Time:1990000
+/tb_top/vif/gpio_io	11001001
+/tb_top/clk	1
+Time:2000000
+/tb_top/clk	0
+Time:2010000
+/tb_top/clk	1
+Time:2020000
+/tb_top/clk	0
+Time:2030000
+/tb_top/clk	1
+Time:2040000
+/tb_top/clk	0
+Time:2050000
+/tb_top/clk	1
+Time:2060000
+/tb_top/clk	0
+Time:2070000
+/tb_top/clk	1
+Time:2080000
+/tb_top/clk	0
+Time:2090000
+/tb_top/clk	1
+Time:2100000
+/tb_top/clk	0
+Time:2110000
+/tb_top/clk	1
+Time:2120000
+/tb_top/clk	0
+Time:2130000
+/tb_top/clk	1
+Time:2140000
+/tb_top/clk	0
+Time:2150000
+/tb_top/clk	1
+Time:2160000
+/tb_top/clk	0
+Time:2170000
+/tb_top/clk	1
+Time:2180000
+/tb_top/clk	0
+Time:2190000
+/tb_top/clk	1
+Time:2200000
+/tb_top/clk	0
+Time:2210000
+/tb_top/clk	1
+Time:2220000
+/tb_top/clk	0
+Time:2230000
+/tb_top/clk	1
+Time:2240000
+/tb_top/clk	0
+Time:2250000
+/tb_top/clk	1
+Time:2260000
+/tb_top/clk	0
+Time:2270000
+/tb_top/clk	1
+Time:2280000
+/tb_top/clk	0
+Time:2290000
+/tb_top/clk	1
+Time:2300000
+/tb_top/clk	0
+Time:2310000
+/tb_top/clk	1
+Time:2320000
+/tb_top/clk	0
+Time:2330000
+/tb_top/vif/uart_rx	0
+/tb_top/clk	1
+Time:2340000
+/tb_top/clk	0
+Time:2350000
+/tb_top/clk	1
+Time:2360000
+/tb_top/clk	0
+Time:2370000
+/tb_top/clk	1
+Time:2380000
+/tb_top/clk	0
+Time:2390000
+/tb_top/clk	1
+Time:2400000
+/tb_top/clk	0
+Time:2410000
+/tb_top/clk	1
+Time:2420000
+/tb_top/clk	0
+Time:2430000
+/tb_top/clk	1
+Time:2440000
+/tb_top/clk	0
+Time:2450000
+/tb_top/clk	1
+Time:2460000
+/tb_top/clk	0
+Time:2470000
+/tb_top/clk	1
+Time:2480000
+/tb_top/clk	0
+Time:2490000
+/tb_top/clk	1
+Time:2500000
+/tb_top/clk	0
+Time:2510000
+/tb_top/clk	1
+Time:2520000
+/tb_top/clk	0
+Time:2530000
+/tb_top/clk	1
+Time:2540000
+/tb_top/clk	0
+Time:2550000
+/tb_top/clk	1
+Time:2560000
+/tb_top/clk	0
+Time:2570000
+/tb_top/clk	1
+Time:2580000
+/tb_top/clk	0
+Time:2590000
+/tb_top/clk	1
+Time:2600000
+/tb_top/clk	0
+Time:2610000
+/tb_top/clk	1
+Time:2620000
+/tb_top/clk	0
+Time:2630000
+/tb_top/clk	1
+Time:2640000
+/tb_top/clk	0
+Time:2650000
+/tb_top/vif/uart_rx	1
+/tb_top/clk	1
+Time:2660000
+/tb_top/clk	0
+Time:2670000
+/tb_top/clk	1
+Time:2680000
+/tb_top/clk	0
+Time:2690000
+/tb_top/clk	1
+Time:2700000
+/tb_top/clk	0
+Time:2710000
+/tb_top/clk	1
+Time:2720000
+/tb_top/clk	0
+Time:2730000
+/tb_top/clk	1
+Time:2740000
+/tb_top/clk	0
+Time:2750000
+/tb_top/clk	1
+Time:2760000
+/tb_top/clk	0
+Time:2770000
+/tb_top/clk	1
+Time:2780000
+/tb_top/clk	0
+Time:2790000
+/tb_top/clk	1
+Time:2800000
+/tb_top/clk	0
+Time:2810000
+/tb_top/clk	1
+Time:2820000
+/tb_top/clk	0
+Time:2830000
+/tb_top/clk	1
+Time:2840000
+/tb_top/clk	0
+Time:2850000
+/tb_top/clk	1
+Time:2860000
+/tb_top/clk	0
+Time:2870000
+/tb_top/clk	1
+Time:2880000
+/tb_top/clk	0
+Time:2890000
+/tb_top/clk	1
+Time:2900000
+/tb_top/clk	0
+Time:2910000
+/tb_top/clk	1
+Time:2920000
+/tb_top/clk	0
+Time:2930000
+/tb_top/clk	1
+Time:2940000
+/tb_top/clk	0
+Time:2950000
+/tb_top/clk	1
+Time:2960000
+/tb_top/clk	0
+Time:2970000
+/tb_top/vif/uart_rx	0
+/tb_top/clk	1
+Time:2980000
+/tb_top/clk	0
+Time:2990000
+/tb_top/clk	1
+Time:3000000
+/tb_top/clk	0
+Time:3010000
+/tb_top/clk	1
+Time:3020000
+/tb_top/clk	0
+Time:3030000
+/tb_top/clk	1
+Time:3040000
+/tb_top/clk	0
+Time:3050000
+/tb_top/clk	1
+Time:3060000
+/tb_top/clk	0
+Time:3070000
+/tb_top/clk	1
+Time:3080000
+/tb_top/clk	0
+Time:3090000
+/tb_top/clk	1
+Time:3100000
+/tb_top/clk	0
+Time:3110000
+/tb_top/clk	1
+Time:3120000
+/tb_top/clk	0
+Time:3130000
+/tb_top/clk	1
+Time:3140000
+/tb_top/clk	0
+Time:3150000
+/tb_top/clk	1
+Time:3160000
+/tb_top/clk	0
+Time:3170000
+/tb_top/clk	1
+Time:3180000
+/tb_top/clk	0
+Time:3190000
+/tb_top/clk	1
+Time:3200000
+/tb_top/clk	0
+Time:3210000
+/tb_top/clk	1
+Time:3220000
+/tb_top/clk	0
+Time:3230000
+/tb_top/clk	1
+Time:3240000
+/tb_top/clk	0
+Time:3250000
+/tb_top/clk	1
+Time:3260000
+/tb_top/clk	0
+Time:3270000
+/tb_top/clk	1
+Time:3280000
+/tb_top/clk	0
+Time:3290000
+/tb_top/vif/uart_rx	1
+/tb_top/clk	1
+Time:3300000
+/tb_top/clk	0
+Time:3310000
+/tb_top/clk	1
+Time:3320000
+/tb_top/clk	0
+Time:3330000
+/tb_top/clk	1
+Time:3340000
+/tb_top/clk	0
+Time:3350000
+/tb_top/clk	1
+Time:3360000
+/tb_top/clk	0
+Time:3370000
+/tb_top/clk	1
+Time:3380000
+/tb_top/clk	0
+Time:3390000
+/tb_top/clk	1
+Time:3400000
+/tb_top/clk	0
+Time:3410000
+/tb_top/clk	1
+Time:3420000
+/tb_top/clk	0
+Time:3430000
+/tb_top/clk	1
+Time:3440000
+/tb_top/clk	0
+Time:3450000
+/tb_top/clk	1
+Time:3460000
+/tb_top/clk	0
+Time:3470000
+/tb_top/clk	1
+Time:3480000
+/tb_top/clk	0
+Time:3490000
+/tb_top/clk	1
+Time:3500000
+/tb_top/clk	0
+Time:3510000
+/tb_top/clk	1
+Time:3520000
+/tb_top/clk	0
+Time:3530000
+/tb_top/clk	1
+Time:3540000
+/tb_top/clk	0
+Time:3550000
+/tb_top/clk	1
+Time:3560000
+/tb_top/clk	0
+Time:3570000
+/tb_top/clk	1
+Time:3580000
+/tb_top/clk	0
+Time:3590000
+/tb_top/clk	1
+Time:3600000
+/tb_top/clk	0
+Time:3610000
+/tb_top/clk	1
+Time:3620000
+/tb_top/clk	0
+Time:3630000
+/tb_top/clk	1
+Time:3640000
+/tb_top/clk	0
+Time:3650000
+/tb_top/clk	1
+Time:3660000
+/tb_top/clk	0
+Time:3670000
+/tb_top/clk	1
+Time:3680000
+/tb_top/clk	0
+Time:3690000
+/tb_top/clk	1
+Time:3700000
+/tb_top/clk	0
+Time:3710000
+/tb_top/clk	1
+Time:3720000
+/tb_top/clk	0
+Time:3730000
+/tb_top/clk	1
+Time:3740000
+/tb_top/clk	0
+Time:3750000
+/tb_top/clk	1
+Time:3760000
+/tb_top/clk	0
+Time:3770000
+/tb_top/clk	1
+Time:3780000
+/tb_top/clk	0
+Time:3790000
+/tb_top/clk	1
+Time:3800000
+/tb_top/clk	0
+Time:3810000
+/tb_top/clk	1
+Time:3820000
+/tb_top/clk	0
+Time:3830000
+/tb_top/clk	1
+Time:3840000
+/tb_top/clk	0
+Time:3850000
+/tb_top/clk	1
+Time:3860000
+/tb_top/clk	0
+Time:3870000
+/tb_top/clk	1
+Time:3880000
+/tb_top/clk	0
+Time:3890000
+/tb_top/clk	1
+Time:3900000
+/tb_top/clk	0
+Time:3910000
+/tb_top/clk	1
+Time:3920000
+/tb_top/clk	0
+Time:3930000
+/tb_top/clk	1
+Time:3940000
+/tb_top/clk	0
+Time:3950000
+/tb_top/clk	1
+Time:3960000
+/tb_top/clk	0
+Time:3970000
+/tb_top/clk	1
+Time:3980000
+/tb_top/clk	0
+Time:3990000
+/tb_top/clk	1
+Time:4000000
+/tb_top/clk	0
+Time:4010000
+/tb_top/clk	1
+Time:4020000
+/tb_top/clk	0
+Time:4030000
+/tb_top/clk	1
+Time:4040000
+/tb_top/clk	0
+Time:4050000
+/tb_top/clk	1
+Time:4060000
+/tb_top/clk	0
+Time:4070000
+/tb_top/clk	1
+Time:4080000
+/tb_top/clk	0
+Time:4090000
+/tb_top/clk	1
+Time:4100000
+/tb_top/clk	0
+Time:4110000
+/tb_top/clk	1
+Time:4120000
+/tb_top/clk	0
+Time:4130000
+/tb_top/clk	1
+Time:4140000
+/tb_top/clk	0
+Time:4150000
+/tb_top/clk	1
+Time:4160000
+/tb_top/clk	0
+Time:4170000
+/tb_top/clk	1
+Time:4180000
+/tb_top/clk	0
+Time:4190000
+/tb_top/clk	1
+Time:4200000
+/tb_top/clk	0
+Time:4210000
+/tb_top/clk	1
+Time:4220000
+/tb_top/clk	0
+Time:4230000
+/tb_top/clk	1
+Time:4240000
+/tb_top/clk	0
+Time:4250000
+/tb_top/clk	1
+Time:4260000
+/tb_top/clk	0
+Time:4270000
+/tb_top/clk	1
+Time:4280000
+/tb_top/clk	0
+Time:4290000
+/tb_top/clk	1
+Time:4300000
+/tb_top/clk	0
+Time:4310000
+/tb_top/clk	1
+Time:4320000
+/tb_top/clk	0
+Time:4330000
+/tb_top/clk	1
+Time:4340000
+/tb_top/clk	0
+Time:4350000
+/tb_top/clk	1
+Time:4360000
+/tb_top/clk	0
+Time:4370000
+/tb_top/clk	1
+Time:4380000
+/tb_top/clk	0
+Time:4390000
+/tb_top/clk	1
+Time:4400000
+/tb_top/clk	0
+Time:4410000
+/tb_top/clk	1
+Time:4420000
+/tb_top/clk	0
+Time:4430000
+/tb_top/clk	1
+Time:4440000
+/tb_top/clk	0
+Time:4450000
+/tb_top/clk	1
+Time:4460000
+/tb_top/clk	0
+Time:4470000
+/tb_top/clk	1
+Time:4480000
+/tb_top/clk	0
+Time:4490000
+/tb_top/clk	1
+Time:4500000
+/tb_top/clk	0
+Time:4510000
+/tb_top/clk	1
+Time:4520000
+/tb_top/clk	0
+Time:4530000
+/tb_top/clk	1
+Time:4540000
+/tb_top/clk	0
+Time:4550000
+/tb_top/clk	1
+Time:4560000
+/tb_top/clk	0
+Time:4570000
+/tb_top/clk	1
+Time:4580000
+/tb_top/clk	0
+Time:4590000
+/tb_top/clk	1
+Time:4600000
+/tb_top/clk	0
+Time:4610000
+/tb_top/vif/adc_sample_valid	1
+/tb_top/vif/gpio_io	00111001
+/tb_top/clk	1
+Time:4620000
+/tb_top/clk	0
+Time:4630000
+/tb_top/vif/uart_rx	0
+/tb_top/vif/adc_sample_valid	0
+/tb_top/clk	1
+Time:4640000
+/tb_top/clk	0
+Time:4650000
+/tb_top/clk	1
+Time:4660000
+/tb_top/clk	0
+Time:4670000
+/tb_top/clk	1
+Time:4680000
+/tb_top/clk	0
+Time:4690000
+/tb_top/clk	1
+Time:4700000
+/tb_top/clk	0
+Time:4710000
+/tb_top/clk	1
+Time:4720000
+/tb_top/clk	0
+Time:4730000
+/tb_top/clk	1
+Time:4740000
+/tb_top/clk	0
+Time:4750000
+/tb_top/clk	1
+Time:4760000
+/tb_top/clk	0
+Time:4770000
+/tb_top/clk	1
+Time:4780000
+/tb_top/clk	0
+Time:4790000
+/tb_top/clk	1
+Time:4800000
+/tb_top/clk	0
+Time:4810000
+/tb_top/clk	1
+Time:4820000
+/tb_top/clk	0
+Time:4830000
+/tb_top/clk	1
+Time:4840000
+/tb_top/clk	0
+Time:4850000
+/tb_top/clk	1
+Time:4860000
+/tb_top/clk	0
+Time:4870000
+/tb_top/clk	1
+Time:4880000
+/tb_top/clk	0
+Time:4890000
+/tb_top/clk	1
+Time:4900000
+/tb_top/clk	0
+Time:4910000
+/tb_top/clk	1
+Time:4920000
+/tb_top/clk	0
+Time:4930000
+/tb_top/clk	1
+Time:4940000
+/tb_top/clk	0
+Time:4950000
+/tb_top/vif/uart_rx	1
+/tb_top/clk	1
+Time:4960000
+/tb_top/clk	0
+Time:4970000
+/tb_top/clk	1
+Time:4980000
+/tb_top/clk	0
+Time:4990000
+/tb_top/clk	1
+Time:5000000
+/tb_top/clk	0

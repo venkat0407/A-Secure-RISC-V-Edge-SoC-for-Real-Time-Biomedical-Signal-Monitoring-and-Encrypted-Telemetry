@@ -4,6 +4,24 @@ SentinelSoC is an RTL-level biomedical System-on-Chip (SoC) integrating a **RISC
 
 ---
 
+## Project Status & Progress
+
+- **RTL Integration:** Complete & verified (`rtl/sentinelsoc_top.sv` integrating CPU, 3×11 AXI4 interconnect, IMEM/DMEM, 9 peripherals, biomedical stream, and safety logic).
+- **Firmware:** Complete & buildable (`firmware/sentinelsoc_test.c`, `sentinelsoc_test.s`, `start.S`, `sentinelsoc.ld`, and standalone Python builder `build_firmware.py`).
+- **SoC Verification Suite:** **18 / 18 Tests Passing (100.0%)** on Synopsys VCS (`simv`) with FSDB waveform dumping for Verdi.
+- **Boundary UVM VIP Suite:** **7 / 7 UVM VIPs Passing (100.0%)** on Synopsys VCS (`scripts/run_all_vips.sh`).
+- **SentinelSoC DUT + UVM VIP Integrated Environments:** **7 / 7 Suites Passing (100.0%)** on Synopsys VCS (`scripts/run_all_dut_vips.sh`), featuring cookbook-compliant `uvm_config_db` `set`/`get` virtual interfaces, AXI stimulus driving, monitor/scoreboard tracking, and dedicated Verdi layout files (`signals.rc`) with FSDB waveforms for:
+  1. `uvm_dut_tb` (UART Telemetry & Serial Config)
+  2. `uvm_dut_gpio_tb` (8-Bit Bidirectional GPIO)
+  3. `uvm_dut_adc_tb` (12-Bit SAR ADC Digitized Stream)
+  4. `uvm_dut_alert_tb` (Autonomous Hardware `alert_led` Bypass)
+  5. `uvm_dut_wdt_tb` (Watchdog Timer Countdown & `wdt_reset_n`)
+  6. `uvm_dut_irq_tb` (Interrupt Aggregator & `core_irq_out` Diagnostics)
+  7. `uvm_dut_boundary_tb` (Unified Multi-Domain Boundary VIP)
+- **Documentation:** Architectural specs (`doc/`), memory mapping (`doc/address_mapping.md`), signal boundary mapping (`doc/SENTINELSOC_TEST_MAP_AND_SIGNAL_BOUNDARY.md`), CSV boundary signal database (`doc/sentinelsoc_boundary_signals.csv`), and regression report (`doc/SENTINELSOC_RISCV_SOC_VERIFICATION_REPORT.md`).
+
+---
+
 ## System Architecture
 
 ```text
@@ -60,6 +78,9 @@ SentinelSoC is an RTL-level biomedical System-on-Chip (SoC) integrating a **RISC
 │   ├── SentinelSoC_Detailed_Spec.docx     # RTL Design Specification Revision 1
 │   ├── SentinelSoC_Detailed_Spec_v2.docx  # Finalized AXI4 Specification Revision 2
 │   ├── SENTINELSOC_RISCV_SOC_VERIFICATION_REPORT.md # Regression scorecard & report
+│   ├── SENTINELSOC_TEST_MAP_AND_SIGNAL_BOUNDARY.md  # Test map & inside/outside signal boundary doc
+│   ├── sentinelsoc_boundary_signals.csv   # Comprehensive signal direction & boundary CSV database
+│   ├── uvm-cookbook 3.pdf                 # Siemens UVM Cookbook reference guide
 │   └── address_mapping.md                 # Complete memory map documentation
 ├── firmware/
 │   ├── Makefile                           # Firmware build automation
@@ -85,7 +106,19 @@ SentinelSoC is an RTL-level biomedical System-on-Chip (SoC) integrating a **RISC
 │   ├── riscv/                             # VeeR EL2 wrapper & memory slaves
 │   └── sentinelsoc_top.sv                 # Top-level SoC integration module
 ├── scripts/
-│   └── axi_interconnect_wrap.py           # AXI interconnect generator
+│   ├── run_all_vips.sh                    # Automated regression runner for all 7 UVM VIPs
+│   ├── uvm_full_tb_generator.py           # Cookbook-compliant UVM VIP & testbench generator
+│   ├── uvm_testbench_generator_v2.py      # UVM testbench generator v2
+│   ├── axi_interconnect_wrap.py           # AXI interconnect generator
+│   └── signals_*.csv                      # Signal definition CSVs for boundary peripherals
+├── uart_uvm_tb/                           # Dynamic UART UVM VIP & Verification Environment
+├── gpio_uvm_tb/                           # Dynamic GPIO UVM VIP & Verification Environment
+├── adc_uvm_tb/                            # Dynamic ADC UVM VIP & Verification Environment
+├── alert_uvm_tb/                          # Dynamic Alert LED UVM VIP & Verification Environment
+├── wdt_uvm_tb/                            # Dynamic WDT UVM VIP & Verification Environment
+├── irq_uvm_tb/                            # Dynamic IRQ Out UVM VIP & Verification Environment
+├── sentinelsoc_boundary_uvm_tb/           # Unified Boundary UVM Testbench Environment
+├── uvm_dut_tb/                            # SentinelSoC DUT + UVM VIP Integrated Verification & FSDB
 ├── sim/
 │   ├── filelist_sentinelsoc.f             # VCS simulation filelist
 │   ├── compile.sh                         # VCS compilation script
@@ -107,7 +140,8 @@ SentinelSoC is an RTL-level biomedical System-on-Chip (SoC) integrating a **RISC
 The firmware is already pre-compiled into `sentinelsoc_test.vhx` and `sentinelsoc_test.elf`. If you modify `sentinelsoc_test.c` or `sentinelsoc_test.s`, regenerate the binaries:
 
 ```bash
-cd /home/student/092/firmware
+cd firmware
+# Or from repo root: cd /home/student/Documents/projdir/firmware
 python3 build_firmware.py
 ```
 
@@ -116,7 +150,8 @@ python3 build_firmware.py
 Change to the simulation directory and run the compilation script:
 
 ```bash
-cd /home/student/092/sim
+cd sim
+# Or from repo root: cd /home/student/Documents/projdir/sim
 ./compile.sh
 ```
 
@@ -127,7 +162,8 @@ This compiles all Verilog/SystemVerilog RTL blocks, the interconnect crossbar, m
 Execute the 18-test regression suite:
 
 ```bash
-cd /home/student/092/sim
+cd sim
+# Or from repo root: cd /home/student/Documents/projdir/sim
 ./run.sh
 ```
 
@@ -165,7 +201,7 @@ You can inspect the generated simulation waveforms using any of the following me
 
 #### Method A: Using the Helper Script
 ```bash
-cd /home/student/092/sim
+cd sim
 ./view_wave.sh verdi       # Opens Verdi with sentinelsoc.fsdb and simv.daidir KDB
 ./view_wave.sh dve         # Opens Synopsys DVE with sentinelsoc.vpd
 ./view_wave.sh gtkwave     # Opens GTKWave with sentinelsoc.vcd
@@ -173,7 +209,7 @@ cd /home/student/092/sim
 
 #### Method B: Synopsys Verdi (Recommended)
 ```bash
-cd /home/student/092/sim
+cd sim
 export VERDI_HOME=/home/student/snps_tools_target/verdi/U-2023.03-SP1
 export PATH=$VERDI_HOME/bin:$PATH
 export SNPSLMD_LICENSE_FILE=27021@14.139.1.126:$SNPSLMD_LICENSE_FILE
@@ -183,7 +219,7 @@ verdi -dbdir simv.daidir -ssf sentinelsoc.fsdb &
 
 #### Method C: Synopsys DVE
 ```bash
-cd /home/student/092/sim
+cd sim
 export VCS_HOME=/home/student/snps_tools_target/vcs/U-2023.03
 export PATH=$VCS_HOME/bin:$PATH
 export SNPSLMD_LICENSE_FILE=27021@14.139.1.126:$SNPSLMD_LICENSE_FILE
@@ -193,8 +229,147 @@ dve -full64 -vpd sentinelsoc.vpd &
 
 #### Method D: GTKWave
 ```bash
-cd /home/student/092/sim
+cd sim
 gtkwave sentinelsoc.vcd &
+```
+
+### 5. Run Boundary UVM VIP Verification Suite
+
+Execute the regression suite for all 7 UVM VIPs (individual peripheral VIPs + unified boundary VIP):
+
+```bash
+cd /home/student/Documents/projdir
+./scripts/run_all_vips.sh
+```
+
+**Expected Result:**
+```
+================================================================
+    Executing SentinelSoC Boundary UVM VIP Verification Suite
+================================================================
+
+>>> Running UVM VIP: uart in /home/student/Documents/projdir/uart_uvm_tb...
+[+] PASS: uart UVM VIP completed with 0 errors and 0 fatals.
+
+>>> Running UVM VIP: gpio in /home/student/Documents/projdir/gpio_uvm_tb...
+[+] PASS: gpio UVM VIP completed with 0 errors and 0 fatals.
+
+>>> Running UVM VIP: adc in /home/student/Documents/projdir/adc_uvm_tb...
+[+] PASS: adc UVM VIP completed with 0 errors and 0 fatals.
+
+>>> Running UVM VIP: alert in /home/student/Documents/projdir/alert_uvm_tb...
+[+] PASS: alert UVM VIP completed with 0 errors and 0 fatals.
+
+>>> Running UVM VIP: wdt in /home/student/Documents/projdir/wdt_uvm_tb...
+[+] PASS: wdt UVM VIP completed with 0 errors and 0 fatals.
+
+>>> Running UVM VIP: irq in /home/student/Documents/projdir/irq_uvm_tb...
+[+] PASS: irq UVM VIP completed with 0 errors and 0 fatals.
+
+>>> Running UVM VIP: sentinelsoc_boundary in /home/student/Documents/projdir/sentinelsoc_boundary_uvm_tb...
+[+] PASS: sentinelsoc_boundary UVM VIP completed with 0 errors and 0 fatals.
+
+================================================================
+  FINAL RESULT: 7 / 7 UVM VIPS PASSED (100.0%)
+================================================================
+```
+
+### 6. Run SentinelSoC DUT + UVM VIP Verification Suites & View Waveforms in Verdi
+
+Each boundary IP interface has a dedicated **DUT + UVM VIP co-simulation environment** connecting the top-level `sentinelsoc_top` DUT with a UVM VIP via standard `uvm_config_db#(virtual <vip>_dut_if)::set` and `get`. Each environment compiles with VCS, executes UVM sequences, and dumps Verdi FSDB waveforms with tailored `signals.rc` layout files.
+
+#### A. Execute Full DUT + UVM VIP Regression (All 7 Suites):
+```bash
+cd /home/student/Documents/projdir
+./scripts/run_all_dut_vips.sh
+```
+
+**Expected Result:**
+```
+================================================================================
+    Executing SentinelSoC DUT + UVM VIP Integrated Verification Regression
+================================================================================
+
+>>> Running SentinelSoC DUT + UVM VIP: uvm_dut_tb...
+[+] PASS: uvm_dut_tb completed with 0 errors and 0 fatals. FSDB generated.
+
+>>> Running SentinelSoC DUT + UVM VIP: uvm_dut_gpio_tb...
+[+] PASS: uvm_dut_gpio_tb completed with 0 errors and 0 fatals. FSDB generated.
+
+>>> Running SentinelSoC DUT + UVM VIP: uvm_dut_adc_tb...
+[+] PASS: uvm_dut_adc_tb completed with 0 errors and 0 fatals. FSDB generated.
+
+>>> Running SentinelSoC DUT + UVM VIP: uvm_dut_alert_tb...
+[+] PASS: uvm_dut_alert_tb completed with 0 errors and 0 fatals. FSDB generated.
+
+>>> Running SentinelSoC DUT + UVM VIP: uvm_dut_wdt_tb...
+[+] PASS: uvm_dut_wdt_tb completed with 0 errors and 0 fatals. FSDB generated.
+
+>>> Running SentinelSoC DUT + UVM VIP: uvm_dut_irq_tb...
+[+] PASS: uvm_dut_irq_tb completed with 0 errors and 0 fatals. FSDB generated.
+
+>>> Running SentinelSoC DUT + UVM VIP: uvm_dut_boundary_tb...
+[+] PASS: uvm_dut_boundary_tb completed with 0 errors and 0 fatals. FSDB generated.
+
+================================================================================
+  FINAL RESULT: 7 / 7 DUT + UVM VIP SUITES PASSED (100.0%)
+================================================================================
+```
+
+---
+
+#### B. Individual DUT + UVM VIP Environments & Verdi Waveforms
+
+| VIP Environment | Directory | Waveform (FSDB) | Verdi RC File | Key Boundary & Internal Signals |
+| :--- | :--- | :--- | :--- | :--- |
+| **UART Telemetry** | `uvm_dut_tb/` | `sentinelsoc_uvm_dut.fsdb` | `signals.rc` | `vif.uart_rx`, `vif.uart_tx`, `dut.u_uart.*` |
+| **GPIO Subsystem** | `uvm_dut_gpio_tb/` | `sentinelsoc_uvm_dut_gpio.fsdb` | `signals.rc` | `vif.gpio_io[7:0]`, `vif.drv_en`, `dut.u_gpio.*` |
+| **SAR ADC Stream** | `uvm_dut_adc_tb/` | `sentinelsoc_uvm_dut_adc.fsdb` | `signals.rc` | `vif.adc_sample_data`, `vif.adc_sample_valid`, `dut.u_adc.*` |
+| **Alert LED Bypass** | `uvm_dut_alert_tb/` | `sentinelsoc_uvm_dut_alert.fsdb` | `signals.rc` | `vif.alert_led`, `dut.u_qrs.alert_flag`, `dut.u_qrs.peak_detected` |
+| **Watchdog Timer** | `uvm_dut_wdt_tb/` | `sentinelsoc_uvm_dut_wdt.fsdb` | `signals.rc` | `vif.wdt_reset_n`, `dut.u_wdt.wdt_counter`, `dut.u_wdt.feed_strobe` |
+| **Interrupt Aggregator** | `uvm_dut_irq_tb/` | `sentinelsoc_uvm_dut_irq.fsdb` | `signals.rc` | `vif.core_irq_out`, `dut.u_intc.irq_mask`, `dut.u_intc.irq_cause` |
+| **Unified Boundary** | `uvm_dut_boundary_tb/` | `sentinelsoc_uvm_dut_boundary.fsdb` | `signals.rc` | All 8 boundary pins & cross-domain interactions |
+
+##### Running and Viewing Any Environment in Verdi:
+```bash
+# Example 1: GPIO DUT + VIP
+cd /home/student/Documents/projdir/uvm_dut_gpio_tb
+./compile_and_run.sh
+./view_wave.sh
+
+# Example 2: ADC DUT + VIP
+cd /home/student/Documents/projdir/uvm_dut_adc_tb
+./compile_and_run.sh
+./view_wave.sh
+
+# Example 3: Watchdog DUT + VIP
+cd /home/student/Documents/projdir/uvm_dut_wdt_tb
+./compile_and_run.sh
+./view_wave.sh
+
+# Example 4: IRQ DUT + VIP
+cd /home/student/Documents/projdir/uvm_dut_irq_tb
+./compile_and_run.sh
+./view_wave.sh
+
+# Example 5: Alert LED DUT + VIP
+cd /home/student/Documents/projdir/uvm_dut_alert_tb
+./compile_and_run.sh
+./view_wave.sh
+
+# Example 6: Unified Boundary DUT + VIP
+cd /home/student/Documents/projdir/uvm_dut_boundary_tb
+./compile_and_run.sh
+./view_wave.sh
+```
+
+Manual Verdi invocation for any environment:
+```bash
+export VERDI_HOME=/home/student/snps_tools_target/verdi/U-2023.03-SP1
+export PATH=$VERDI_HOME/bin:$PATH
+export SNPSLMD_LICENSE_FILE=27021@14.139.1.126:$SNPSLMD_LICENSE_FILE
+
+verdi -dbdir simv.daidir -ssf <waveform.fsdb> -sswr signals.rc &
 ```
 
 #### Recommended Signal Hierarchies to Add:
